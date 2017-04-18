@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+#dragMe {  width: 24px; height: 24px; background: red;margin:10px; }
+#makeMeDroppable { width: 48px; height: 48px; background:blue;border: 1px solid #999; }
+</style>
+
+<script src='https://code.jquery.com/jquery-2.2.0.min.js'></script>
+<script src='https://cdn.rawgit.com/admsev/jquery-play-sound/master/jquery.playSound.js'></script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+  var myAudio = document.createElement('audio');
+  myAudio.controls = true;
+  myAudio.src = 'http://www.noiseaddicts.com/samples_1w72b820/3724';
+  myAudio.play();
+</script>
+</head>
+<body>
+  <p>
+    Please remember to remove .mp3 file extension.
+  </p>
+  <button onclick='$.playSound("sounds/sadtrombone.mp3")'>Play</button>
+
+</body>
+</html>
